@@ -1,0 +1,46 @@
+:root {
+    --income-color: #198754;
+    --expense-color: #dc3545;
+    --balance-positive: #0d6efd;
+    --balance-negative: #fd7e14;
+    --light-bg: #f8f9fa;
+    --card-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --card-shadow-hover: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 1rem 1.25rem;
+}
+
+.stat-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: var(--card-shadow);
+    border: none;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.stat-card.border-success {
+    border-left: 4px solid var(--income-color) !important;
+}
+
+.stat-card.border-danger {
+    border-left: 4px solid var(--expense-color) !important;
+}
+
+.stat-card.border-primary {
+    border-left: 4px solid var(--balance-positive) !important;
+}
