@@ -44,3 +44,9 @@ body {
 .stat-card.border-primary {
     border-left: 4px solid var(--balance-positive) !important;
 }
+header h1 {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
